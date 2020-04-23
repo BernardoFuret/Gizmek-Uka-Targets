@@ -33,7 +33,8 @@ async function updateHtmlPage( monsters ) {
 			if (
 				monster.match( '(original)' )
 				||
-				printouts[ 'Primary type' ].some( t => t.fulltext.match( /ritual/i ) )	) {
+				printouts[ 'Primary type' ].some( t => t.fulltext.match( /ritual/i ) )
+			) {
 //				console.log( 'Filtering', monster );
 
 				return;
