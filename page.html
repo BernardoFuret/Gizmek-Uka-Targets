@@ -470,7 +470,7 @@ $( '.checkbox-legend' ).data( 'checked-next', false ).click( function( e ) {
 		;
 	}
 
-	$( '#query-options' ).click( e => {
+	$( '#query-options' ).removeAttr( 'onclick' ).off( 'click' ).click( e => {
 		e.preventDefault();
 
 		const jsQuery = {
