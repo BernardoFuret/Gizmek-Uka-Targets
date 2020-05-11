@@ -1,0 +1,1 @@
+const YUGIPEDIA_DATA = [];
