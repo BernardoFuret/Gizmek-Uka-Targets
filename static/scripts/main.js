@@ -194,6 +194,7 @@
 			type: $( '#query__form__container--type .query--type' )
 				.toArray()
 					.reduce( checkedValues, [] ),
+			onlyNormalMonsters: $( '#query--normal-monsters' ).is( ':checked' ),
 			includeSSFromDeck: $( '#query--special-summon-from-deck' ).is( ':checked' ),
 		};
 
@@ -206,6 +207,8 @@
 				jsQuery.attribute.includes( monster.attribute )
 				&&
 				jsQuery.type.includes( monster.type )
+				&&
+				( jsQuery.onlyNormalMonsters ? monster.isNormalMonster : true )
 				&&
 				( jsQuery.includeSSFromDeck ? true : monster.ssFromDeck )
 			);
