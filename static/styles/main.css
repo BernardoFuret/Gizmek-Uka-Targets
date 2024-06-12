@@ -109,6 +109,12 @@ fieldset fieldset {
 	padding: 0;
 }
 
+.form-table {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+
 .query__form__container__fieldset-label__grouping {
 	padding: 0 1em;
 	max-width: 60%;
@@ -117,6 +123,10 @@ fieldset fieldset {
 .query__form__label {
 	white-space: nowrap;
 	margin-right: .25em;
+}
+
+#query-options {
+	margin-top: 14px;
 }
 
 #query-yugipedia {
